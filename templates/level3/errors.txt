@@ -1,0 +1,55 @@
+from main import app
+from flask import jsonify
+
+"""
+This module errors.py is used to handle the errors both HTTP , Internal server and also Custom error
+"""
+
+@app.errorhandler(409)
+def duplicate_entry(error):
+    return jsonify({"code":409 , "error":1 , "message":"Already Exists"}),409
+
+@app.errorhandler(400)
+def bad_request(error):
+    return jsonify({"code":400 , "error":1 , "message":"Bad request"}),400
+
+@app.errorhandler(404)
+def url_not_found(error):
+    return jsonify({ "error" : 1 , 'code':404, "message":"The requested resource is not found"}),404
+
+@app.errorhandler(500)
+def internal_server_error(error):
+    return jsonify({"error" : 1 ,'code':500,"message":"There is a error in server.That's all I know."}),500
+
+@app.errorhandler(405)
+def method_not_allowed(error):
+    return jsonify({"error" : 1 ,'code':405,"message":"The requested url will not accept this method , try changing the method"}),405
+
+@app.errorhandler(422)
+def process_error(error):
+    return jsonify({"error" : 1 ,'code':422,"message":"Coudn't Process"}),422
+
+@app.errorhandler(403)
+def permission_error(error):
+    return jsonify({"error" : 1 ,'code':403,"message":"Forbidden , You don't have the permission to access the requested resource."}),403
+
+class NotExistsError(Exception):
+    """The Requested user not found error  , may be the user is not i the database"""
+    pass
+
+class ValidationError(Exception):
+    """This error is raised the time of account creation or accout updation time and checks for
+    the user deails already exists or not if not the error will won't get raised ."""
+    pass
+
+class ActivationError(Exception):
+    """When the deactivate account try to get created this error will raise and re-activate the account of the requested user."""
+    pass
+
+class DeactivatedError(Exception):
+    """When the deactivated account tries to login this account will raise."""
+    pass
+
+class InvalidFileType(Exception):
+    """This error only raise when the users try to update the profile picture with non-valid picture type."""
+    pass

@@ -1,0 +1,24 @@
+from datetime import datetime
+from main import db
+# Module to create the database tabel
+
+"""
+https://docs.sqlalchemy.org/en/13/core/type_basics.html#generic-types
+
+This module is Completely for creating , migrating sql tables , Each class is Separate table ,
+and it will be created in sql tables.
+After every update / changes don't forget to upgrade the db
+
+
+
+python migrate.py db init
+python migrate.py db migrate
+python migrate.py db upgrade
+
+"""
+
+class Users(db.Model):
+    id = db.Column(db.Integer ,autoincrement=True , primary_key=True)
+
+    def __repr__(self):
+        print(f"<{self.id}>")

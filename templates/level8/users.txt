@@ -1,0 +1,22 @@
+class Users:
+    def __init__(self):
+        pass
+
+    def GET(self):
+        # Handels get method
+        pass
+
+    def POST(self):
+        # Handels post method
+
+        pass
+
+    def PUT(self):
+        # Handels put method
+
+        pass
+
+    def DELETE(self):
+        # Handels delete method
+
+        pass

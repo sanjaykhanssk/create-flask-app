@@ -1,0 +1,28 @@
+from flask import Flask , jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS,cross_origin
+from main.configure.config import Config
+app = Flask("shareLY")
+CORS(app)
+
+
+app.config.from_object(Config)
+
+
+
+db = SQLAlchemy(app)
+
+from main.users.routes import users
+from main.posts.routes import posts
+from main.views.routes import views
+from main.analytics.routes import analytics
+
+app.register_blueprint(users , url_prefix="/user")
+app.register_blueprint(posts , url_prefix="/post")
+app.register_blueprint(views , url_prefix="/view")
+app.register_blueprint(analytics , url_prefix="/analytics")
+
+
+@app.route("/ping" , methods = ["GET"])
+def ping():
+    return jsonify({"message":"Pong"})

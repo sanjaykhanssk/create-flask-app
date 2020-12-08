@@ -1,0 +1,19 @@
+import os
+import json
+from flask import current_app , app
+
+#Configuration file , it will configure some basics data.
+host =os.environ['DB_HOST'] 
+password =os.environ['DB_PASSWORD'] 
+db =os.environ['DB_NAME'] 
+user =os.environ['DB_USER'] 
+SQL_PATH =f"mysql://{user}:{password}@{host}/{db}" 
+
+with open("main/config/app_config.json") as conf_file:
+    configure=json.load(conf_file)
+
+class Config:
+    
+    SECRET_KEY = configure.get("APP_SECRET_KEY")
+    SQLALCHEMY_DATABASE_URI = SQL_PATH
+

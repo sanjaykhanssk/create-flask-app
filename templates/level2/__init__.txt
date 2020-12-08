@@ -1,0 +1,3 @@
+app.py - > Used to run the enitre flask App
+
+migrate.py -> Migrate your data base, uses flask-migrate.

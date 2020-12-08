@@ -1,0 +1,34 @@
+
+from flask import (request , jsonify , make_response ,Blueprint,url_for , current_app , abort,
+                after_this_request , send_file , render_template , render_template_string) 
+from werkzeug import generate_password_hash , check_password_hash
+import os
+
+
+from .Classes.users import Users
+
+users = Blueprint('users' , __name__)
+
+
+@users.route('/' , methods=['GET',"POST","PUT","DELETE"])
+def simple_curd():
+    
+    user = Users()
+
+    if method == "GET":
+        # Handels get method
+        pass
+    
+    if method == "POST":
+        # Handels post method
+        pass
+    
+    if method == "PUT":
+        # Handels put method
+        pass
+    
+    if method == "DELETE":
+        # Handels delete method
+        pass
+    
+    return {"message" : "Hello world"}
