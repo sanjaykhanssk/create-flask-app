@@ -1,6 +1,8 @@
 # Create Flask APP
 
-Create flask app is very simmilar to dijango-create-project / npx create-react-app.
+Create flask app is very similar to dijango-create-project / npx create-react-app.
+
+[![SC2 Video](https://i9.ytimg.com/vi_webp/rYUyj1wqU30/mqdefault.webp?time=1607396700000&sqp=CNzau_4F&rs=AOn4CLB_ADLVNkxke7O0Ra1EQDvc7yaEfw)](https://youtu.be/rYUyj1wqU30)
 
 ## what will this do
 
