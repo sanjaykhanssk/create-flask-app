@@ -1,7 +1,6 @@
 
 from flask import (request , jsonify , make_response ,Blueprint,url_for , current_app , abort,
                 after_this_request , send_file , render_template , render_template_string) 
-from werkzeug import generate_password_hash , check_password_hash
 import os
 
 
@@ -15,15 +14,15 @@ def simple_curd():
     
     user = Users()
 
-    if method == "GET":
+    if request.method == "GET":
         # Handels get method
         pass
     
-    if method == "POST":
+    if request.method == "POST":
         # Handels post method
         pass
     
-    if method == "PUT":
+    if request.method == "PUT":
         # Handels put method
         pass
     

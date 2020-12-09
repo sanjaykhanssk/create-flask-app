@@ -9,7 +9,7 @@ db =os.environ['DB_NAME']
 user =os.environ['DB_USER'] 
 SQL_PATH =f"mysql://{user}:{password}@{host}/{db}" 
 
-with open("main/config/app_config.json") as conf_file:
+with open("app/Configure/app_config.json") as conf_file:
     configure=json.load(conf_file)
 
 class Config:

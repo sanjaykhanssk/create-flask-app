@@ -1,5 +1,7 @@
+"""
 Create global functions and classes. 
 Such as 
 1. RestAPI class handler ,
 2. Exceptions
 3. and more
+"""
