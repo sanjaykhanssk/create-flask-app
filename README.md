@@ -6,7 +6,7 @@ Create flask app is very similar to dijango-create-project / npx create-react-ap
 
 ## How to run
 cd to your working folder - (the folder you want to create your app).
-python(3) path-to-folder/create-flask-app/main.py.
+python(3) path-to-folder/create-flask-app
 
 ## what will this do
 
