@@ -11,12 +11,13 @@ python(3) path-to-folder/create-flask-app
 ## what will this do
 
 1. This project create a app template for getting started with api in 0 time.
-2. It comes with Dockerfile to build image and setup CI/CD.
-3. It also creates virtuval env, Install packages(Globally).
-4. This setup is for SQL projects (Nosql support - contribution needed).
-5. It comes with DB migration file(migrate.py) to migrate daabases(flask-migrate, flask-sqlalchemy).
-6. It creates blueprints directory(tradianally known as views).
-7. It auto genrate secrect key for app.
+2. It comes with Docker-file to build image and setup CI/CD.
+3. It also creates virtual env, Install packages(Globally).
+4. This setup is for SQL projects (Nosql support - contribution needed).
+5. It comes with DB migration file(migrate.py) to migrate databases(flask-migrate, flask-sqlalchemy).
+6. It creates blueprints directory(traditionally known as views).
+7. It auto generate secret key for app.
+8. It auto generate requirements.txt
 
 Contribution to this project is welcomed.
 

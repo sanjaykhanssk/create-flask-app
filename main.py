@@ -177,5 +177,6 @@ def main():
 
     print("source bin/activate")
     print("copy the above code and run for activate virtuval-env")
+    print("\n Never forget to read readme.md")
     print("\n\n\n Happy coding")
     print("\n\n\n Created with create-flask-app")
