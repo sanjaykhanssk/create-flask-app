@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: create-flask-app
+Version: 0.0.1
+Summary:  A handy tool to start your flask project in 0 time 
+Home-page: UNKNOWN
+Author: Sanjay Khan ssk
+Author-email: sanjaykhanssk@gmail.com
+License: MIT
+Description: # Create Flask APP
+        
+        Create flask app is very similar to dijango-create-project / npx create-react-app.
+        
+        [![SC2 Video](https://i9.ytimg.com/vi_webp/rYUyj1wqU30/mqdefault.webp?time=1607396700000&sqp=CNzau_4F&rs=AOn4CLB_ADLVNkxke7O0Ra1EQDvc7yaEfw)](https://youtu.be/rYUyj1wqU30)
+        
+        ## How to run
+        cd to your working folder - (the folder you want to create your app).
+        python(3) path-to-folder/create-flask-app/main.py.
+        
+        ## what will this do
+        
+        1. This project create a app template for getting started with api in 0 time.
+        2. It comes with Dockerfile to build image and setup CI/CD.
+        3. It also creates virtuval env, Install packages(Globally).
+        4. This setup is for SQL projects (Nosql support - contribution needed).
+        5. It comes with DB migration file(migrate.py) to migrate daabases(flask-migrate, flask-sqlalchemy).
+        6. It creates blueprints directory(tradianally known as views).
+        7. It auto genrate secrect key for app.
+        
+        Contribution to this project is welcomed.
+        
+        
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (10/DEC/2020)
+        -------------------
+        - First Stable Release
+Keywords: flask,flask-app,create-flask-app
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

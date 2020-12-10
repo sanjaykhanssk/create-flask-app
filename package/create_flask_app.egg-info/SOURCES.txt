@@ -1,0 +1,10 @@
+README.md
+setup.py
+create-flask-app/__init__.py
+create-flask-app/main.py
+create-flask-app/functions/__init__.py
+create-flask-app/functions/create_secrect_key.py
+create_flask_app.egg-info/PKG-INFO
+create_flask_app.egg-info/SOURCES.txt
+create_flask_app.egg-info/dependency_links.txt
+create_flask_app.egg-info/top_level.txt
